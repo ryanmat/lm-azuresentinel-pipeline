@@ -1,0 +1,47 @@
+# Internal planning / drafts — per global CLAUDE.md, docs/ is for internal planning only.
+# lessons.md is the carve-out: it records durable project learnings and IS tracked.
+docs/*
+!docs/lessons.md
+
+# Python / uv
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+dist/
+build/
+
+# Azure Functions local
+function/local.settings.json
+function/.python_packages/
+function/bin/
+function/obj/
+.azure/
+
+# Bicep build artifacts
+*.json.bak
+main.json
+
+# Secrets and environment
+.env
+.env.*
+!.env.example
+*.pfx
+*.pem
+*.key
+
+# Editor and OS
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+
+# Claude files — kept local to prevent environment cross-contamination (per global rule)
+CLAUDE.md
+.claude/
+
