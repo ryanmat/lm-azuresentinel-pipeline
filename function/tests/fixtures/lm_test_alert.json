@@ -1,0 +1,20 @@
+{
+  "alertId": "LMD0",
+  "alertType": "alert",
+  "severity": "ok",
+  "status": "test",
+  "deviceName": "Host",
+  "deviceDisplayName": "Host",
+  "deviceGroups": "",
+  "dataSourceOrGroup": "Datasource Instance",
+  "instanceName": "Datasource Instance",
+  "dataPointName": "Datapoint",
+  "dataPointValue": "No Data",
+  "thresholdValue": "",
+  "alertMessage": "LMD0 LogicMonitor testing alert for Host Datasource Instance Datapoint (ok)\nThis is a testing alert for Host Datasource Instance Datapoint (ok)",
+  "startEpoch": "2026-04-20 18:54:36 GMT",
+  "clearEpoch": "Alert Clear Value",
+  "ackUser": "",
+  "portalUrl": "https://lmryanmatuszewski.logicmonitor.com/santaba/uiv4/alert#detail~id=LMD0&type=alert",
+  "eventSource": ""
+}

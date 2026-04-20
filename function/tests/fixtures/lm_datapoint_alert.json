@@ -1,0 +1,20 @@
+{
+  "alertId": "LMD362853019",
+  "alertType": "alert",
+  "severity": "critical",
+  "status": "active",
+  "deviceName": "openclaw-vm",
+  "deviceDisplayName": "openclaw-vm",
+  "deviceGroups": "/Servers/Linux,/Ryan Lab",
+  "dataSourceOrGroup": "Precursor Predictive",
+  "instanceName": "gateway",
+  "dataPointName": "PredictedLatencyP95",
+  "dataPointValue": "4200.0",
+  "thresholdValue": "> 3000",
+  "alertMessage": "Precursor forecast P95 latency 4200ms crosses 3000ms threshold for gateway on openclaw-vm",
+  "startEpoch": "1776709200",
+  "clearEpoch": "",
+  "ackUser": "",
+  "portalUrl": "https://lmryanmatuszewski.logicmonitor.com/santaba/uiv4/alert#detail~id=LMD362853019&type=alert",
+  "eventSource": ""
+}

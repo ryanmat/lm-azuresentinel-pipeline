@@ -1,0 +1,20 @@
+{
+  "alertId": "LMD400000001",
+  "alertType": "alert",
+  "severity": "critical",
+  "status": "active",
+  "deviceName": "openclaw-vm",
+  "deviceDisplayName": "openclaw-vm",
+  "deviceGroups": "/Servers/Linux,/Ryan Lab",
+  "dataSourceOrGroup": "openclaw-auth-failures",
+  "instanceName": "",
+  "dataPointName": "",
+  "dataPointValue": "",
+  "thresholdValue": "",
+  "alertMessage": "Failed password for root from 203.0.113.42 port 58321 ssh2 (matched keyword 'Failed password')",
+  "startEpoch": "1776710000",
+  "clearEpoch": "",
+  "ackUser": "",
+  "portalUrl": "https://lmryanmatuszewski.logicmonitor.com/santaba/uiv4/alert#detail~id=LMD400000001&type=alert",
+  "eventSource": ""
+}
