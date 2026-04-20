@@ -1,0 +1,20 @@
+{
+  "alertId": "##ALERTID##",
+  "alertType": "##ALERTTYPE##",
+  "severity": "##LEVEL##",
+  "status": "##ALERTSTATUS##",
+  "deviceName": "##HOST##",
+  "deviceDisplayName": "##HOSTNAME##",
+  "deviceGroups": "##HOSTGROUP##",
+  "dataSourceOrGroup": "##DATASOURCE##",
+  "instanceName": "##INSTANCE##",
+  "dataPointName": "##DATAPOINT##",
+  "dataPointValue": "##VALUE##",
+  "thresholdValue": "##THRESHOLD##",
+  "alertMessage": "##MESSAGE##",
+  "startEpoch": "##START##",
+  "clearEpoch": "##CLEARVALUE##",
+  "ackUser": "##ACKEDBY##",
+  "portalUrl": "##ALERTDETAILURL##",
+  "eventSource": "##EVENTSOURCE##"
+}
