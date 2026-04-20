@@ -1,0 +1,14 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "AzureWebJobsFeatureFlags": "EnableWorkerIndexing",
+    "EventHubConnection__fullyQualifiedNamespace": "ehns-lmsent-poc-REPLACE.servicebus.windows.net",
+    "EventHubConnection__credential": "managedidentity",
+    "EVENT_HUB_NAME": "lm-alerts",
+    "DCE_ENDPOINT": "https://dce-lmsent-poc-REPLACE.eastus-1.ingest.monitor.azure.com",
+    "DCR_IMMUTABLE_ID": "dcr-REPLACE",
+    "DCR_STREAM_NAME": "Custom-LogicMonitorAlerts_CL"
+  }
+}

@@ -1,0 +1,12 @@
+.venv
+.git
+.vscode
+__pycache__
+*.pyc
+.pytest_cache
+.ruff_cache
+.mypy_cache
+local.settings.json
+tests
+pyproject.toml
+uv.lock
