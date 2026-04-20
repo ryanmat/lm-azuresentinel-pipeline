@@ -5,6 +5,9 @@ description = "Azure Function that routes LogicMonitor LogAlerts into Microsoft 
 requires-python = ">=3.12"
 dependencies = [
     "azure-functions>=1.21.0",
+    "azure-identity>=1.19.0",
+    "azure-monitor-ingestion>=1.0.4",
+    "pydantic>=2.9.0",
 ]
 
 [dependency-groups]
