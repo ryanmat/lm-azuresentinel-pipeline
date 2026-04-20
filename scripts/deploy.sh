@@ -5,7 +5,10 @@
 set -euo pipefail
 
 RG="${RG:-CTA_LM_Sentinel_POC}"
-LOCATION="${LOCATION:-eastus}"
+LOCATION="${LOCATION:-eastus2}"
+
+# WSL / Ubuntu-slim containers often lack ICU; func publish needs this unless ICU is installed.
+export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT="${DOTNET_SYSTEM_GLOBALIZATION_INVARIANT:-1}"
 DEPLOYMENT_NAME="lm-sentinel-poc-$(date -u +%Y%m%d-%H%M%S)"
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
@@ -55,6 +58,10 @@ if [[ -f "${REPO_ROOT}/function/function_app.py" ]]; then
     echo "[deploy] Install with: npm i -g azure-functions-core-tools@4"
   else
     (cd "${REPO_ROOT}/function" && func azure functionapp publish "${FUNCTION_APP}" --python --build remote)
+    if [[ $? -ne 0 ]]; then
+      echo "[deploy] ERROR: func publish failed. If you see ICU errors, ensure DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1 is set."
+      exit 1
+    fi
   fi
 else
   echo "[deploy] No function/function_app.py found — skipping Function publish (skeleton deploys later)"

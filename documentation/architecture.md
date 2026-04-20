@@ -51,7 +51,7 @@ SAS token is generated post-provision via `./scripts/generate_eh_sas.sh` with a 
 | EH auth rule (Listen) | `function-listen` | Kept for diagnostic fallback; runtime uses MI |
 | Storage account | `stlmsentpoc<uniq>` | Function backing store |
 | App Insights | `appi-lmsent-poc` | Workspace-based on `law-lmsent-poc` |
-| App Service Plan | `plan-lmsent-poc` | Linux Consumption Y1 |
+| App Service Plan | `plan-lmsent-poc` | Linux Consumption Y1 (eastus had zero App Service quota; moved to eastus2) |
 | Function App | `func-lmsent-poc-<uniq>` | Python 3.12, System-Assigned MI |
 | Data Collection Endpoint | `dce-lmsent-poc` | Logs Ingestion endpoint |
 | Data Collection Rule | `dcr-lmsent-poc` | Maps stream → custom table |

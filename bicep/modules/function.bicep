@@ -76,6 +76,8 @@ resource appInsights 'Microsoft.Insights/components@2020-02-02' = {
   }
 }
 
+// Y1 Dynamic (Consumption) Linux plan. East US had 0 quota on this sub; East US 2 has
+// existing Y1 plans for this subscription so quota is expected to be available.
 resource plan 'Microsoft.Web/serverfarms@2023-12-01' = {
   name: planName
   location: location

@@ -1,6 +1,6 @@
 using 'main.bicep'
 
-param location = 'eastus'
+param location = 'eastus2'
 param prefix = 'lmsent-poc'
 param tags = {
   poc: 'lm-sentinel'
