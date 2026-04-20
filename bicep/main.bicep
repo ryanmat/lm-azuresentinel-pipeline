@@ -66,6 +66,13 @@ module dcr 'modules/dcr.bicep' = {
   }
 }
 
+module sentinelRule 'modules/sentinel-rule.bicep' = {
+  name: 'sentinel-rule-deploy'
+  params: {
+    workspaceName: workspace.outputs.workspaceName
+  }
+}
+
 module functionApp 'modules/function.bicep' = {
   name: 'function-deploy'
   params: {
@@ -97,3 +104,4 @@ output dcrImmutableId string = dcr.outputs.dcrImmutableId
 output streamName string = streamName
 output functionAppName string = functionApp.outputs.functionAppName
 output functionPrincipalId string = functionApp.outputs.principalId
+output sentinelRuleName string = sentinelRule.outputs.ruleName
